@@ -1,0 +1,12 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "The Tech Blog - Forum to hold MVC related articles",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "author": "Matt Hawley",
+  "license": "ISC"
+}

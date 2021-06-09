@@ -1,7 +1,6 @@
 DB/*
 Assets/*
 node_modules/*
-**.md
-**.json
-**.sql
+**/*.md
+**/*.sql
 README.md

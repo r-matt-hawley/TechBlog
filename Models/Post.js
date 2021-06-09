@@ -37,7 +37,7 @@ Post.init(
             type: DataTypes.DATE,
             allowNull: false
         },
-        comments: {
+        commentedOn: {
             type: DataTypes.INTEGER,
         }
         

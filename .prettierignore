@@ -1,0 +1,7 @@
+DB/*
+Assets/*
+node_modules/*
+**.md
+**.json
+**.sql
+README.md

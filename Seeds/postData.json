@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Sal's Post",
+        "content": "Sal's Content",
+        "user_id": "1",
+        "createdDate": "2021-06-01"
+    },
+    {
+        "id": 2,
+        "title": "Lernatino's Post",
+        "content": "Lernatino's Content",
+        "user_id": "2",
+        "createdDate": "2021-06-02"
+    },
+    {
+        "id": 3,
+        "title": "Amiko's Post",
+        "content": "Amiko's Content",
+        "user_id": "3",
+        "createdDate": "2021-06-03"
+    }
+]

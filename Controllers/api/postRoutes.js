@@ -15,6 +15,29 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+router.get("/:id", async (req, res) => {
+  //This route used when returning a post as a JSON
+  try {
+    const postData = await Post.findOne({ raw:true, where: { id: req.params.id } });
+
+    if (!postData) {
+      console.log("/api/posts/:id:\nPost id not found:", req.params.id);
+      res
+        .status(400)
+        .json({ message: 'Post not found, please try again' });
+      return;
+    }
+
+    // post = postData.map(data => data.get({ plain: true }));
+
+    res.status(200).json(...postData );
+
+  } catch (error) {
+    console.log("\n\n/api/posts/:id error:\n", error, "\n\n");
+    res.status(400).json(error);
+  }
+});
+
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const PostData = await Post.destroy({

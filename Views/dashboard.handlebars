@@ -1,2 +1,8 @@
 <p>This is the Dashboard</p>
-<p>user:{{user}}</p>
+<p>Logged in:{{logged_in}}</p>
+<p>Logged in as:{{logged_in_user}}</p>
+{{#each posts as |post|}}
+<hr>
+<p>user:{{post.user_id}}</p>
+<a href="/post/{{post.id}}">post:{{post.title}}</p>
+{{/each}}

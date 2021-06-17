@@ -3,9 +3,8 @@
 {{#each posts as |post|}}
 {{!-- <p>Logged In: {{logged_in}}</p> --}}
 <p><strong>post: {{{json post}}}</strong></p>
-<p>Title:{{post.title}}</p>
+<a href="/post/{{post.id}}">Title:{{post.title}}</a>
 <p>By:{{post.user.username}}</p>
 <p>Created on: {{post.createdDate}}</p>
-<p>Content: {{post.content}}</p>
 <hr>
 {{/each}}
